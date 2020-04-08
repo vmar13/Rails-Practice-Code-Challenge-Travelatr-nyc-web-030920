@@ -1,0 +1,9 @@
+<h1><%= @destination.name%></h1>
+<ul>
+<% post_array = @destination.posts.last(5) %>
+<% post_array.each do |p|%>
+<li><%= p.title %></li> 
+<% end %>
+
+
+</ul>
