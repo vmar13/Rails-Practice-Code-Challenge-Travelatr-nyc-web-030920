@@ -1,0 +1,8 @@
+<h1>NAME:<%= @blogger.name %></h1>
+
+<%= "#{@blogger.name}'s most liked post is: #{@blogger.posts.likes.max}"%>
+<%= most_liked_post = ""  %>
+<%= most_likes = 0 %>
+
+<% @blogger.posts.each do |post| %>
+<%= if post.likes < %>
