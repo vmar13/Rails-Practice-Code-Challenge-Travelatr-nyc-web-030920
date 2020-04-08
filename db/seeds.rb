@@ -32,3 +32,9 @@ end
     })
   end
 end
+
+
+test_post1 = Post.create({title: "this is a post", content: "etc etc lorem ipsum",
+likes: 50, blogger: Blogger.find(1), destination: Destination.all.sample})
+test_post2 = Post.create({title: "this is not a post", content: "words words words", 
+likes: 100, blogger: Blogger.find(1), destination: Destination.all.sample})
